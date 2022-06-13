@@ -7,7 +7,7 @@ Can be played:
 * Offline (versus the system).
 * Online (versus other users).
 
-# Installation
+## Installation
 1. Clone this repository and import into Android Studio.
 
    HTTPS: `git clone https://github.com/AvivDoron/Tic_Tac_Toe.git`
@@ -20,7 +20,7 @@ Can be played:
    - Go to: app\src\main\java\com\example\tic_tac_toe.
    - In the file: FirebaseUtils.java, change the value of: `FIREBASE_URL` To your firebase url.
 
-# compatibility
+## compatibility
 - compileSdk 31
 - minSdk 28
 - targetSdk 31
