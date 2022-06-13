@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Game_MainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context="tic_tac_toe_game.GameActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Game_Player1CV"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Game_Player1CL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/faded_placeholder">
+
+            <TextView
+                android:id="@+id/Game_Player1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Game_Player2CV"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Game_Player2CL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/faded_placeholder">
+
+            <TextView
+                android:id="@+id/Game_Player2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Game_GiveUpBtn"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_button"
+        android:text="Give Up"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Game_Board_TableLayout"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TableLayout
+        android:id="@+id/Game_Board_TableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/game_board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/Game_BoardRow0_TableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="132dp"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/Game_Cell_00_IV"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:src="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/Game_Cell_01_IV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="40dp"
+                android:src="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/Game_Cell_02_IV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="?attr/selectableItemBackground" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Game_BoardRow1_TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/Game_Cell_10_IV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:src="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/Game_Cell_11_IV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="35dp"
+                android:src="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/Game_Cell_12_IV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="?attr/selectableItemBackground" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Game_BoardRow2_TableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/Game_Cell_20_IV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:src="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/Game_Cell_21_IV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="35dp"
+                android:src="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/Game_Cell_22_IV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="?attr/selectableItemBackground" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
