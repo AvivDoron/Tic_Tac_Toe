@@ -1,7 +1,7 @@
 # "Tic Tac Toe" Android app
 "Tic Tac Toe" game app for Android.
 
-Can be plaied:
+Can be played:
 1. Offline (versus the system).
 2. online (versus other users).
 
